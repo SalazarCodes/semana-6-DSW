@@ -1,0 +1,23 @@
+package lab;
+import java.io.FileReader;
+
+import com.google.gson.*;
+
+public class ReadJSON {
+
+	public static void main(String[] args) {
+		
+		JsonParser parser = new JsonParser();
+		try {
+			Object obj = parser.parse(new FileReader("D:/semana 6/JSONArchive.json"));
+			JsonObject jsonObject = (JsonObject) obj;
+			String nombre = jsonObject.get("Name").toString();
+			String autor = jsonObject.get("Author").toString();
+			
+			JsonArray c = (JsonArray)jsonObject.get("Company List")
+		}
+		catch(Exception e){
+			
+		}
+	}
+}

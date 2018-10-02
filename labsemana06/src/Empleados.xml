@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Empleados>
+    <codigo>A001</codigo>
+    <direccion>Breña</direccion>
+    <nombre>Perez</nombre>
+    <sueldo>2000</sueldo>
+</Empleados>

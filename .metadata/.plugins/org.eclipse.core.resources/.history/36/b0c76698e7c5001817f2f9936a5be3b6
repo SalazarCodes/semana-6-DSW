@@ -1,0 +1,16 @@
+package lab;
+import com.google.gson.*;
+
+public class ReadJSON {
+
+	public static void main(String[] args) {
+		
+		JsonParser parser = new JsonParser();
+		try {
+			Object obj = parser.parse(new FileReader("D:/semana 6/JSONArchive.json"));
+		}
+		catch(Exception e){
+			
+		}
+	}
+}

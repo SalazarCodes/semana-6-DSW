@@ -1,0 +1,28 @@
+package lab;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Vector;
+
+public class Objects {
+	
+	private String nombre;
+	private String origen;
+	String cadena;
+	Collection c = new ArrayList();
+	Vector v;
+	
+	Objects(String nombre, String origen, String cadena){
+		this.nombre = nombre;
+		this.origen = origen;
+		this.cadena = cadena;
+		c.add("Kiere plea");
+		c.add("x2");
+		c.add(":v");
+		v = new Vector();
+		c.add("Element 1");
+		c.add(null);
+		c.add("Element 2");
+		c.add("Element 3");
+	}
+}

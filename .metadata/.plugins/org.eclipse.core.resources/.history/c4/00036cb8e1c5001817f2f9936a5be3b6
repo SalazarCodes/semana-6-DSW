@@ -1,0 +1,10 @@
+package lab;
+
+public class CrearXML {
+	
+	public static void main(String[] args) {
+	EmpleadoJaxb obj = new EmpleadoJaxb();
+	obj.marshall();
+	
+	}
+}

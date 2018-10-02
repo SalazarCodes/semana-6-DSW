@@ -1,0 +1,12 @@
+package lab;
+import com.google.gson.*;
+
+public class PrintJSON {
+	
+	public static void main(String[] args) {
+		
+		Gson gson = new Gson();
+		Object o = new Object("Pepito","Alv",null);
+		String jsonString = gson.toJson(obj);
+	}
+}

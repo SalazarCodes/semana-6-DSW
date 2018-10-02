@@ -1,0 +1,51 @@
+package lab;
+import javax.xml.bind.annotation.*;
+
+@XmlRootElement(name = "Empleados")
+public class Empleados {
+
+	private String codigo, nombre, nireccion;
+	private int sueldo;
+	public String getCodigo() {
+		return codigo;
+	}
+	@XmlElement
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+	@XmlElement
+	public String getNombre() {
+		return nombre;
+	}
+	@XmlElement
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	@XmlElement
+	public String getNireccion() {
+		return nireccion;
+	}
+	@XmlElement
+	public void setNireccion(String nireccion) {
+		this.nireccion = nireccion;
+	}
+	@XmlElement
+	public int getSueldo() {
+		return sueldo;
+	}
+	@XmlElement
+	public void setSueldo(int sueldo) {
+		this.sueldo = sueldo;
+	}
+	public Empleados(String codigo, String nombre, String nireccion, int sueldo) {
+		super();
+		this.codigo = codigo;
+		this.nombre = nombre;
+		this.nireccion = nireccion;
+		this.sueldo = sueldo;
+	}
+	public Empleados() {
+		super();
+	}
+	
+}

@@ -1,0 +1,18 @@
+package lab;
+import java.nio.file.*;
+import javax.xml.bind.*;
+
+public class EmpleadoJaxb {
+	
+	public void marshall() {
+		try {
+			Empleados emp = new Empleados("A001", "Perez", "Breña", 2000);
+			JAXBContext jc = JAXBContext.newInstance(Empleados.class);
+			Marshaller ms = jc.createMarshaller();
+			ms.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+}
